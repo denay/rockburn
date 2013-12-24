@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+CARRITO DE COMPRA
+	
+ejemplo carrito de la compra
+	
+				Alex Almecija y Carlos Lopez  |  29-Oct-2013
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title> Denay </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/> <!--Estilo general-->
+		
+		<link rel="shortcut icon" href="img/denay.png" type="image/x-icon"> <!--icono-->
+	</head>
+	<body>
+		<div id="cuerpo">
+		    
+		    <div id="contenido">
+		    	<div id="logo">
+
+		    		<a href="index.html"><img src="img/logo_noreflex.png"></a>
+
+		    	</div>
+				
+				<!--MENU-->
+		        <nav>
+		            <ul id="menu">
+		                <li><a href="index.html" title="Vuelve a Denay"><img src="img/denay.png"/></a></li>
+		                <li><a href="componentes/componentes.html" title="Componentes">Componentes</a></li>
+		                <li><a href="configurador/configurador.html" title="configurador">Configurador PCs</a></li>
+		                <li></li>
+		                
+		                <li>
+		                    <form>
+		                        <input type="text" placeholder="Busca en Denay..." />
+		                    </form>
+		                </li>
+		            </ul>
+		        </nav>
+		        <div id="info">
+					<h1> Su carrito <small> Estos son los productos que ha elegido. </small></h1>
+				</div>
+		        <div id="contenedorCarrito">
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Producto</th>
+                                        <th>&nbsp;</th>
+                                        <th>Precio unidad</th>
+                                        <th>Cantidad</th>
+                                        <th>Subtotal</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <td><a href="#"><img src="img/intel_core_i5.jpg" width="100"  alt=""></a></td>
+                                        <td class="name"><a href="#">Intel Core i5</a></td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td>200 €</td>
+                                        <td><input type="text" value="10"></td>
+                                        <td>2000 €</td>
+                                        <td><a href="#">Borrar</a></td>
+                                    </tr>
+                                      <tr>
+                                        <td><a href="#"><img src="img/intel_core_i5.jpg" width="100"  alt=""></a></td>
+                                        <td class="name"><a href="#">Intel Core i5</a></td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td>200 €</td>
+                                        <td><input type="text" value="10"></td>
+                                        <td>2000 €</td>
+                                        <td><a href="#">Borrar</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td colspan="2" ><a href="#">Seguir comprando</a></td>
+                                        <td colspan="5" ><a href="#"> Actualizar carrito</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+			</div>
+				
+
+		    </div>
+		</div>
+	</body>

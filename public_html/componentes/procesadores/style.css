@@ -1,0 +1,70 @@
+
+
+#pro h2 {margin:0 0 10px 55px;font-family:Arial, Helvetica, sans-serif;font-size:18px;color:#424242;font-weight:normal}
+
+
+
+#products {margin:15px 0;float:left;width:100%}
+
+#products img, #products div {float:left}
+
+#pro {width:180px}
+
+#products div p {margin-left:20px;float:left;width:25px;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;text-align:right;color:#424242}
+
+#bigdivider {float:left;width:1px;height:162px;background:url(../img/BigDivider.jpg) no-repeat top left}
+
+#buyit {margin:0 10px 0;float:right;width:60px;height:20px;background:url(../img/btn_buyit.jpg) no-repeat top left}
+
+
+
+.produc {width: 128px; height: 128px}
+
+.product_title{
+font-family: "Segoe UI", "Calibri", Arial;
+padding:5px 0 5px 0;
+
+}
+.centro{
+display: inline-block;
+	
+}
+.product_title a{
+text-decoration:none;
+color: black;
+padding:5px 0 5px 0;
+
+}
+
+.product_title a:hover{
+color:#064E5A;
+}
+
+.product_img{
+padding:5px 0 5px 0;
+display: inline-block;
+}
+
+
+/*---------contenedorCategoria----------*/
+
+
+.contenedorCategoria{
+width:180px;
+height:auto;
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+padding:10px 10px 10px 11px;
+
+}
+
+
+.contenedorCategoria:hover{
+	background-color: #D8D8D8;
+}
+
+
+.center_contenedorCategoria{
+width:173px;height: auto;float:left; text-align:center;padding:0px; margin:0px; border:0px #F0F4F5 solid;
+}

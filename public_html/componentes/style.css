@@ -1,0 +1,35 @@
+.product_title{
+font-family: "Segoe UI", "Calibri", Arial;
+padding:5px 0 5px 0;
+
+}
+.product_title a{
+text-decoration:none;
+color: black;
+padding:5px 0 5px 0;
+
+}
+.product_title a:hover{
+color:#064E5A;
+}
+.product_img{
+padding:5px 0 5px 0;
+}
+
+
+/*---------contenedorCategoria----------*/
+.contenedorCategoria{
+width:180px;
+height:auto;
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+padding:10px 10px 10px 11px;
+
+}
+.contenedorCategoria:hover{
+	background-color: #D8D8D8;
+}
+.center_contenedorCategoria{
+width:173px;height: auto;float:left; text-align:center;padding:0px; margin:0px; border:0px #F0F4F5 solid;
+}
