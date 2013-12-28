@@ -2,104 +2,110 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 PÀGINA PRINCIPAL DEL SITE
-	
+        
 Pàgina principal de denay
-	
-				Alex Almecija  |  29-Oct-2013
+        
+                                Alex Almecija  |  29-Oct-2013
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<title> Denay </title>
-		<link rel="stylesheet" type="text/css" href="style.css"/> <!--Estilo general-->
-		<script src="galeria.js"></script>
-		<link rel="shortcut icon" href="img/denay.png" type="image/x-icon"> <!--icono-->
-	</head>
-	<body>
-		<div id="cuerpo">
-		    
-		    <div id="contenido">
-		    	<div id="logo">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title> Denay </title>
+        <link rel="stylesheet" type="text/css" href="style.css"/> <!--Estilo general-->
+        <script type="text/javascript" src="galeria.js"></script>
+        <link rel="shortcut icon" href="img/denay.png" type="image/x-icon"/> <!--icono-->
+        <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css"/> <!--bootstrap-->
+        
+    </head>
+    <body>   
+        <div id="cuerpo">
 
-		    		<a href="index.html"><img src="img/logo_noreflex.png"></a>
+            <div id="contenido">
+                <div id="logo">
 
-		    	</div>
-				
-				<!--MENU-->
-		        <nav>
-		            <ul id="menu">
-		                <li><a href="index.html" title="Vuelve a Denay"><img src="img/denay.png"/></a></li>
-		                <li><a href="componentes/componentes.html" title="Componentes">Componentes</a></li>
-		                <li><a href="configurador/configurador.html" title="configurador">Configurador PCs</a></li>
-		                <li><a href="carrito.html" title="Ejemplo del carrito de compra">Ejemplo Carrito</a></li>
-		                
-		                <li>
-		                    <form>
-		                        <input type="text" placeholder="Busca en Denay..." />
-		                    </form>
-		                </li>
-		            </ul>
-		        </nav>
-		        <div id="info">
-					<h1> Keep it simple. <small> Su compra de componentes de PC en tres clics. Sin complicaciones. </small></h1>
-				</div>
-		        <div id="galeria">
-					<a id="linkSlider" href="javascript:document.location=ruta"><img src="img/slider/foto1.png" id="galeria" name="galeria" width=700 height=400 /></a>
-					<script>
-						
-						cambiaLink()
-						pasaFoto() //Per cridar a la funció
-						
-					</script>
-				</div>
-		        
-				<div id="social">
-											
-						<div id="comentarios">
-							<fieldset>
+                    <a href="index.html"><img src="img/logo_noreflex.png"></a>
 
-								<legend>Últimos comentarios</legend>
-									<div id="coment"> 
-										
-											<div class="fotoUserMid">
-												<img src="img/terrycrews.jpg"/>
-												<p class="nombreUser">Terry Crews</p>
-											</div>
-										
-										<p class="bubble" > Pussy ass motherfucking bitch nigga. You think I'm playing, kid?  </p>
-									</div>
-									<div class="separator"></div>
-									<div id="coment"> 
-										
-											<div class="fotoUserMid">
-												<img src="img/mockuser.jpg"/>
-												<p class="nombreUser">Emma Stone</p>
-											</div>
-										
-										<p class="bubble" >Hola soy nueva y no me ubico mucho en esto de los Denays, queria saber si teniais 
-										alguna dobladora de Denays (denaybender).	 </p>
-									</div>
-							</fieldset>
-						</div>
-					
+                </div>
 
-					<div id="analisis">
-						<fieldset>
-							<legend>Últimos análisis</legend>
-							
-						</fieldset>
-						
-					</div>
-					<div id="puntuacion">
-						<fieldset>
-							<legend>Últimas puntuaciones</legend>
-							Div puntuacion. Dejen sus dies.
-						</fieldset>
-						
-					</div>
-				</div>
-				
+                <!--MENU-->
+                <nav>
+                    <ul id="menu">
+                        <li><a href="index.html" title="Vuelve a Denay"><img src="img/denay.png"/></a></li>
+                        <li><a href="componentes/componentes.html" title="Componentes">Componentes</a></li>
+                        <li><a href="configurador/configurador.html" title="configurador">Configurador PCs</a></li>
+                        <li><a href="carrito.html" title="Ejemplo del carrito de compra">Ejemplo Carrito</a></li>
 
-		    </div>
-		</div>
-	</body>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Busca en Denay..." />
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="info">
+                    <h1> Keep it simple. <small> Su compra de componentes de PC en tres clics. Sin complicaciones. </small></h1>
+                </div>
+                <div id="galeria">
+                    <a id="linkSlider" href="javascript:document.location=ruta"><img src="img/slider/foto1.png" id="galeria" name="galeria" width=700 height=400 /></a>
+                    <script>
+
+                        cambiaLink()
+                        pasaFoto() //Per cridar a la funció
+
+                    </script>
+                </div>
+                <!--INICIO DIV SOCIAL-->
+                <div id="social">
+                    <div id="comentarios">
+                        <i class="fa fa-comments-o fa-4x"></i >
+                        <h2> Últimos comentarios</h2>
+                        <div class="one slide">
+                            <blockquote>
+                                <span class="leftq quotes">&ldquo;</span> Me encanta esta página. Y sus creadores son muy atractivos. Y su profesor, ni te cuento. Yo les pondría un 10. <span class="rightq quotes">&bdquo; </span>
+                            </blockquote>
+                            <img src="img/mockuser.jpg" class="fotoUser big" />
+                            <h2>Emma Stone</h2>
+                            <h6>A las 13:57 en <a href="componentes/procesadores/intel/i5.html">Intel Core i5</a></h6>
+                        </div>
+                    </div>
+
+                    <div id="analisis">
+                        <i class="fa fa-pencil-square-o fa-4x"></i>
+                        <h2> Últimos análisis </h2>
+                        <div class="testimonial">
+                            <span class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas turpis vel ultrices bibendum. Praesent ipsum arcu, facilisis vel diam eu, scelerisque laoreet sem. Duis pretium cursus est, at pellentesque nulla bibendum eget. Sed scelerisque interdum tristique. Nunc cursus mattis augue a faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eu magna dui. Phasellus sodales erat sit amet aliquet dignissim. Nulla venenatis non purus eget venenatis. Quisque convallis quam id elementum dapibus. Nullam consequat mattis sodales.
+
+    Nullam mi lacus, tristique in metus quis, viverra suscipit dui. Vestibulum auctor vestibulum pharetra. Etiam sit amet lorem ac nisl luctus vulputate. Proin tempus leo dui, at tincidunt ipsum pellentesque in. Suspendisse purus dui, suscipit ut venenatis a, elementum ut odio. Aliquam erat volutpat. Etiam sit amet quam mauris. Mauris pharetra erat sem, a consequat massa porta et. Curabitur laoreet leo metus, et cursus felis laoreet at.
+
+
+                            </span>
+                            <img class="medium" src="img/terrycrews.jpg" alt="" />
+                            <br/>
+                            <h2 class="usu">Terry Crews</h2>
+                            <span class="sub">Análisis sobre <a href="componentes/procesadores/intel/i5.html"> Intel Core i5</a></span>
+                        </div>
+                    </div>
+                    <div id="puntuacion">
+                        <i class="fa fa-star-half-o fa-4x"></i>
+                        <h2> Últimas puntuaciones </h2>
+                        <div class="punt">
+                            <span class="ratings threehalf"></span><br/>
+                            <img class="fotoPunt small" src="img/mockuser.jpg"></img>
+                            <h2>Emma Stone</h2>
+                            <h6>A las 13:57 en <a href="componentes/procesadores/intel/i5.html">Intel Core i5</a></h6>
+                        </div>
+                        <div class="separacion"></div>
+                        <div class="punt">
+                            <span class="ratings onehalf"></span><br/>
+                            <img class="fotoPunt small" src="img/terrycrews.jpg"></img>
+                            <h2>Terry Crews</h2>
+                            <h6>A las 15:46 en <a href="componentes/procesadores/intel/i5.html">Intel Core i5</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN DIV SOCIAL-->
+
+
+            </div>
+        </div>
+    </body>

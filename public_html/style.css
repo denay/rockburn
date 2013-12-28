@@ -2,7 +2,7 @@
 /* ------------------------------------------------------------------------
                                 Todo a cero 
 ---------------------------------------------------------------------------*/
-*{margin:0; padding:0;}
+*{margin:0; padding:0;font-family: "Segoe UI Light","Calibri",Arial;}
 img{ border: none;}
 
 /* Titulos */
@@ -247,60 +247,44 @@ We also remove the borders, since they don't need them. */
 /* ------------------------------------------------------------------------
                                Divs sociales 
 ---------------------------------------------------------------------------*/
-#social div{
-    display: inline-block;
-    width: 30%;
+#social{
+    background-image: url(img/social_bg.png);
+    width: 100%;
+    position: absolute;
     margin: 0 auto;
-    /*falta centrar*/
+    padding: 0;
+    border:0;
+    left: 0;
+    display: table;
+    -webkit-box-shadow: 0px 0px 11px #000;
+    -moz-box-shadow:    0px 0px 11px #000;
+    box-shadow:         0px 0px 11px #000;
 }
-.separator {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    margin:1.5em 0;
+#social div{
+    display: table-cell;
+    width: 30%;    
 }
-fieldset {
--webkit-border-radius: 8px;
--moz-border-radius: 8px;
-border-radius: 8px;
+.icon {
+    width: 32px;
+    height: 32px;
+   margin: 0 auto; 
+   display: inline;
+   vertical-align: bottom;
 }
-legend {
+#social h2{
+  color: #736861;
+  margin:15px 0 5px;
+  text-shadow: 0 1px rgba(255,255,255,0.5);
+  display: inline;
+}
 
-font-family: "Segoe UI","Calibri",Arial;
--webkit-border-radius: 8px;
--moz-border-radius: 8px;
-border-radius: 8px;
-padding: 6px;
-background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F2F2F2), color-stop(0.5, #E6E6E6), color-stop(0.51, #D8D8D8), color-stop(1, #BDBDBD));
-background-image: -moz-linear-gradient(center bottom, #F2F2F2 0%, #E6E6E6 50%, #D8D8D8 51%, #BDBDBD 100% );
-}
+
 /* ------------------------------------------------------------------------
                                Comentarios 
 ---------------------------------------------------------------------------*/
-.bubble 
-{
-position: relative;
-width: 90%;
-height: 60px;
-padding: 10px;
-background: #E6E6E6;
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
-border-radius: 20px;
-}
 
-.bubble:after 
-{
-content: "";
-position: absolute;
-top: -12px;
-left: 22px;
-border-style: solid;
-border-width: 0 7px 12px;
-border-color: #E6E6E6 transparent;
-display: block;
-width: 0;
-z-index: 1;
-}
+
+
 #comentarios div{
     width: 90%;
     margin: 0 auto;
@@ -310,38 +294,262 @@ z-index: 1;
     vertical-align: top;
 }
 
-.fotoUserMid img{
-    width: 64px;
-    height: 64px;
+.fotoUser {
+   
      display: inline;
 
-    border-radius: 32px;
-    -webkit-border-radius: 32px;
-    -moz-border-radius: 32px;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
     
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
-.fotoUserMid p{
+.fotoUser p{
     display: inline;
 }
-.nombreUser {
-    font-weight: bold;
-    vertical-align: top;
+
+
+#comentarios{
+ 
+  min-height:315px;
+  margin:0 auto;
+  position:relative;
+  padding-bottom:30px;
+  overflow:hidden;
 }
-.comentarioLocalizacion{
-    font-weight: normal;
-    font-size: 9px;
-    vertical-align: inherit;
+#comentarios h2{
+  color:#736861; 
+  margin:15px 0 5px;
+  text-shadow:0 1px rgba(255,255,255,0.5);
 }
-#analisis {
-    width: inherit;
-    height: inherit;
-    overflow-x:auto; 
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    position: relative;
-    vertical-align: top;
+#comentarios h6{
+  color:#928566; 
+  margin:0;
+}
+#comentarios h6 a:link, #comentarios h6 a:visited{
+  color:whitesmoke;
+  text-decoration: none;
 }
 
+#comentarios blockquote{
+  margin:0;
+  padding:30px;
+  background-color: #DB532B;
+  color:white;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+  position:relative;
+  transition: background-color 0.6s linear;
+}
+
+#comentarios blockquote:after { 
+  content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute; 
+  top: 100%; 
+  border: solid transparent; 
+  border-top-color: #DA532B;
+  border-left-color:#DA532B;
+  border-width: 10px; 
+  left: 10%; 
+} 
+
+
+
+.quotes{
+  position:absolute;
+  color:rgba(255,255,255,0.5);
+  font-size:5em;
+  font-family: Times New Roman;
+}
+.leftq{
+  top: -15px;
+  left:5px;
+}
+.rightq{
+  bottom:-5px;
+  right:45px;
+}
+#comentarios img{
+  float:left;
+  margin-right: 20px;
+}
+.slide{
+  position:absolute;
+  opacity:1;
+  transition: all 0.6s ease-in;
+}
+
+/******************************************************
+                        ANALISIS
+*******************************************************/
+#analisis {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 15px 15px 15px;
+}
+.testimonial {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 11px #000;
+-moz-box-shadow:    0px 0px 11px #000;
+box-shadow:         0px 0px 11px #000;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}  
+  .quote {
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px 25px 0;
+    padding: 10px 0 25px;
+    text-align: justify;
+  }
+  .testimonial img {
+    background: #fff;
+    border-radius: 50%;
+    padding: 0 25px;
+    position: relative;
+    z-index: 2;
+  }
+  #analisis h2{
+    text-shadow:0 1px rgba(255,255,255,0.5);
+    color: #736861;  
+  }
+  .sub {
+    color:#928566;
+    font-size: 12px;
+    display: block;
+  }
+  .sub a:link, .sub a:visited{
+  color:#666;
+  text-decoration: none;
+}
+
+/******************************************************
+                      PUNTUACIONES
+*******************************************************/
+#puntuacion {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 15px 15px 15px;
+
+}
+.rating {
+    direction: rtl;
+    font-size: 17px;
+    unicode-bidi: bidi-override;
+    position: relative;
+}
+    .rating span.star {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+    }
+       .rating span.star:hover {
+            cursor: pointer;
+        }
+        .rating span.star:before {
+            color: #F9C8D3;
+            content: "\f006";
+        }
+        .rating span.star:hover:before, 
+        .rating span.star:hover ~ span.star:before {
+            color: #EF005B;
+            content: "\f005";
+        }
+        .rating span.star:hover:after {
+            direction: ltr;
+            content: attr(title);
+            position: absolute;
+            left: 0;
+            bottom: -22px;
+            white-space: nowrap;
+            font: normal 14px/normal Arial, Helvetica, sans-serif;
+        }
+    
+
+.ratings {
+    width: 85px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+}
+    .ratings:before,
+    .ratings:after{
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .ratings:before {
+      color: #F9C8D3;
+      content: "\f006\f006\f006\f006\f006";
+    }
+    .ratings:after {
+      color: #EF005B;
+      content: "\f005\f005\f005\f005\f005";
+      overflow: hidden;
+    }
+
+
+.ratings.one:after{content: "\f005";}
+.ratings.onehalf:after{content: "\f005\f089";}
+.ratings.two:after{content: "\f005\f005";}
+.ratings.twohalf:after{content: "\f005\f005\f089";}
+.ratings.three:after{content: "\f005\f005\f005";}
+.ratings.threehalf:after{content: "\f005\f005\f005\f089";}
+.ratings.four:after{content: "\f005\f005\f005\f005";}
+.ratings.fourhalf:after{content: "\f005\f005\f005\f005\f089";}
+
+#puntuacion div.punt{
+    position: relative;
+    background-color: whitesmoke;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 11px #000;
+    -moz-box-shadow:    0px 0px 11px #000;
+    box-shadow:         0px 0px 11px #000;
+}
+.fotoPunt{
+    display: block;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    float: right;
+}
+.fotoPunt h2{
+    display: block;
+    
+}
+.separacion{
+    min-height: 20px;
+}
+#puntuacion div{
+    display: block;
+    width: 90%;
+}
+
+/*----------------------------------------------------
+                Estilos imágenes usuario
+------------------------------------------------------*/
+.big {
+     width: 150px;
+    height: 150px;
+}
+.medium{
+    width: 100px;
+    height: 100px;
+}
+.small{
+    width: 64px;
+    height: 64px;
+}
