@@ -1,0 +1,282 @@
+/* ------------------------------------------------------------------------
+                               Divs sociales 
+---------------------------------------------------------------------------*/
+#social{
+    background-image: url(img/social_bg.png);
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    border:0;
+    left: 0;
+    display: table;
+    -webkit-box-shadow: 0px 0px 11px #000;
+    -moz-box-shadow:    0px 0px 11px #000;
+    box-shadow:         0px 0px 11px #000;
+}
+#social div{
+    display: table-cell;
+    width: 30%;    
+}
+#social h2{
+  color: #736861;
+  margin:15px 0 5px;
+  text-shadow: 0 1px rgba(255,255,255,0.5);
+  display: inline;
+}
+
+/* ------------------------------------------------------------------------
+                               Comentarios 
+---------------------------------------------------------------------------*/
+#comentarios div{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+    position: relative;
+    vertical-align: top;
+}
+
+.fotoUser {
+   
+     display: inline;    
+    
+}
+.fotoUser p{
+    display: inline;
+}
+
+
+#comentarios{
+ 
+  min-height:315px;
+  margin:0 auto;
+  position:relative;
+  padding-bottom:30px;
+  overflow:hidden;
+}
+#comentarios h2{
+  color:#736861; 
+  margin:15px 0 5px;
+  text-shadow:0 1px rgba(255,255,255,0.5);
+}
+#comentarios h6{
+  color:#928566; 
+  margin:0;
+}
+#comentarios h6 a:link, #comentarios h6 a:visited{
+  color:whitesmoke;
+  text-decoration: none;
+}
+
+#comentarios blockquote{
+  margin:0;
+  padding:30px;
+  background-color: #DB532B;
+  color:white;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+  position:relative;
+  transition: background-color 0.6s linear;
+}
+
+#comentarios blockquote:after { 
+  content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute; 
+  top: 100%; 
+  border: solid transparent; 
+  border-top-color: #DA532B;
+  border-left-color:#DA532B;
+  border-width: 10px; 
+  left: 10%; 
+} 
+
+
+
+.quotes{
+  position:absolute;
+  color:rgba(255,255,255,0.5);
+  font-size:5em;
+  font-family: Times New Roman;
+}
+.leftq{
+  top: -15px;
+  left:5px;
+}
+.rightq{
+  bottom:-5px;
+  right:45px;
+}
+#comentarios img{
+  float:left;
+  margin-right: 20px;
+}
+.slide{
+  position:absolute;
+  opacity:1;
+  transition: all 0.6s ease-in;
+}
+/* ------------------------------------------------------------------------
+                              Fin Comentarios 
+---------------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------------
+                              Analisis 
+---------------------------------------------------------------------------*/
+#analisis {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 15px 15px 15px;
+}
+.testimonial {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 11px #000;
+-moz-box-shadow:    0px 0px 11px #000;
+box-shadow:         0px 0px 11px #000;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}  
+  .quote {
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px 25px 0;
+    padding: 10px 0 25px;
+    text-align: justify;
+  }
+  .testimonial img {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  #analisis h2{
+    text-shadow:0 1px rgba(255,255,255,0.5);
+    color: #736861;  
+  }
+  .sub {
+    color:#928566;
+    font-size: 12px;
+    display: block;
+  }
+  .sub a:link, .sub a:visited{
+  color:#666;
+  text-decoration: none;
+}
+/* ------------------------------------------------------------------------
+                              Fin Analisis 
+---------------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------------
+                              Puntuaciones 
+---------------------------------------------------------------------------*/
+#puntuacion {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 15px 15px 15px;
+
+}
+.rating {
+    direction: rtl;
+    font-size: 17px;
+    unicode-bidi: bidi-override;
+    position: relative;
+}
+    .rating span.star {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+    }
+       .rating span.star:hover {
+            cursor: pointer;
+        }
+        .rating span.star:before {
+            color: #F9C8D3;
+            content: "\f006";
+        }
+        .rating span.star:hover:before, 
+        .rating span.star:hover ~ span.star:before {
+            color: #EF005B;
+            content: "\f005";
+        }
+        .rating span.star:hover:after {
+            direction: ltr;
+            content: attr(title);
+            position: absolute;
+            left: 0;
+            bottom: -22px;
+            white-space: nowrap;
+            font: normal 14px/normal Arial, Helvetica, sans-serif;
+        }
+    
+
+.ratings {
+    width: 85px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+}
+    .ratings:before,
+    .ratings:after{
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .ratings:before {
+      color: #F9C8D3;
+      content: "\f006\f006\f006\f006\f006";
+    }
+    .ratings:after {
+      color: #EF005B;
+      content: "\f005\f005\f005\f005\f005";
+      overflow: hidden;
+    }
+
+
+.ratings.one:after{content: "\f005";}
+.ratings.onehalf:after{content: "\f005\f089";}
+.ratings.two:after{content: "\f005\f005";}
+.ratings.twohalf:after{content: "\f005\f005\f089";}
+.ratings.three:after{content: "\f005\f005\f005";}
+.ratings.threehalf:after{content: "\f005\f005\f005\f089";}
+.ratings.four:after{content: "\f005\f005\f005\f005";}
+.ratings.fourhalf:after{content: "\f005\f005\f005\f005\f089";}
+
+#puntuacion div.punt{
+    position: relative;
+    background-color: whitesmoke;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 11px #000;
+    -moz-box-shadow:    0px 0px 11px #000;
+    box-shadow:         0px 0px 11px #000;
+}
+.fotoPunt{
+    display: block;
+    margin-left: 5px;
+    margin-top: 10px;
+    float: right;
+}
+.fotoPunt h2{
+    display: block;
+    
+}
+.separacion{
+    min-height: 20px;
+}
+#puntuacion div{
+    display: block;
+    width: 90%;
+}
+/* ------------------------------------------------------------------------
+                              Fin Puntuaciones 
+---------------------------------------------------------------------------*/
+

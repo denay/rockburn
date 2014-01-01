@@ -1,0 +1,30 @@
+/*----------------------------------------------------
+                Estilos imágenes usuario
+------------------------------------------------------*/
+.big, .medium, .small, .tiny {
+    border-radius: 50%;
+     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.big {
+     width: 150px;
+    height: 150px;
+}
+.medium{
+    width: 100px;
+    height: 100px;
+}
+.small{
+    width: 64px;
+    height: 64px;
+}
+.tiny{
+    width: 32px;
+    height: 32px;
+    float:right;
+    margin: 5%;
+}
+
